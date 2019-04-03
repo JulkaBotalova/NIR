@@ -57,7 +57,7 @@
 									"font": "Arial;13;1",
 									"left": 504,
 									"top": 917,
-									"width": 326.8671875,
+									"width": 355.533203125,
 									"height": 13,
 									"text": "MethodOfTreatmentOfMetals"
 								},
@@ -83,7 +83,7 @@
 											"font": "Arial;13;0",
 											"left": 509,
 											"top": 940,
-											"width": 316.8671875,
+											"width": 345.533203125,
 											"height": 13
 										},
 										{
@@ -98,21 +98,21 @@
 											"font": "Arial;13;0",
 											"left": 509,
 											"top": 955,
-											"width": 316.8671875,
+											"width": 345.533203125,
 											"height": 13
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 504,
 									"top": 935,
-									"width": 326.8671875,
+									"width": 355.533203125,
 									"height": 38
 								}
 							],
 							"font": "Arial;13;0",
 							"left": 504,
 							"top": 912,
-							"width": 326.8671875,
+							"width": 355.533203125,
 							"height": 61,
 							"nameLabel": {
 								"$ref": "AAAAAAFpcO30v9+r/mg="
@@ -140,7 +140,7 @@
 									"font": "Arial;13;1",
 									"left": 504,
 									"top": 765,
-									"width": 310.24267578125,
+									"width": 338.90869140625,
 									"height": 13,
 									"text": "MetalworkingOperation"
 								},
@@ -166,7 +166,7 @@
 											"font": "Arial;13;0",
 											"left": 509,
 											"top": 788,
-											"width": 300.24267578125,
+											"width": 328.90869140625,
 											"height": 13
 										},
 										{
@@ -181,7 +181,7 @@
 											"font": "Arial;13;0",
 											"left": 509,
 											"top": 803,
-											"width": 300.24267578125,
+											"width": 328.90869140625,
 											"height": 13
 										},
 										{
@@ -196,21 +196,21 @@
 											"font": "Arial;13;0",
 											"left": 509,
 											"top": 818,
-											"width": 300.24267578125,
+											"width": 328.90869140625,
 											"height": 13
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 504,
 									"top": 783,
-									"width": 310.24267578125,
+									"width": 338.90869140625,
 									"height": 53
 								}
 							],
 							"font": "Arial;13;0",
 							"left": 504,
 							"top": 760,
-							"width": 310.24267578125,
+							"width": 338.90869140625,
 							"height": 76,
 							"nameLabel": {
 								"$ref": "AAAAAAFpcO6bZN+49Hs="
@@ -565,9 +565,9 @@
 										"$ref": "AAAAAAFpdbmj76RrjZM="
 									},
 									"font": "Arial;13;1",
-									"left": 216,
+									"left": 192,
 									"top": 149,
-									"width": 197.59716796875,
+									"width": 226.98046875,
 									"height": 13,
 									"text": "Material"
 								},
@@ -591,9 +591,9 @@
 												"$ref": "AAAAAAFpdbnGX6R2E8k="
 											},
 											"font": "Arial;13;0",
-											"left": 221,
+											"left": 197,
 											"top": 172,
-											"width": 187.59716796875,
+											"width": 216.98046875,
 											"height": 13
 										},
 										{
@@ -606,23 +606,23 @@
 												"$ref": "AAAAAAFpdboap6R/S78="
 											},
 											"font": "Arial;13;0",
-											"left": 221,
+											"left": 197,
 											"top": 187,
-											"width": 187.59716796875,
+											"width": 216.98046875,
 											"height": 13
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 216,
+									"left": 192,
 									"top": 167,
-									"width": 197.59716796875,
+									"width": 226.98046875,
 									"height": 38
 								}
 							],
 							"font": "Arial;13;0",
-							"left": 216,
+							"left": 192,
 							"top": 144,
-							"width": 197.59716796875,
+							"width": 226.98046875,
 							"height": 61,
 							"nameLabel": {
 								"$ref": "AAAAAAFpdbmj8KRsbCg="
@@ -649,7 +649,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 466,
+									"left": 469,
 									"top": 147,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -666,7 +666,7 @@
 										"$ref": "AAAAAAFpdbsRbaS2Fys="
 									},
 									"font": "Arial;13;0",
-									"left": 438,
+									"left": 443,
 									"top": 147,
 									"height": 13,
 									"alpha": 0.5235987755982988,
@@ -701,7 +701,7 @@
 								"$ref": "AAAAAAFpdbmj76RrjZM="
 							},
 							"lineStyle": 2,
-							"points": "413:168;520:168",
+							"points": "418:168;520:168",
 							"nameLabel": {
 								"$ref": "AAAAAAFpdbsRbaS3wns="
 							},
@@ -731,7 +731,7 @@
 									"font": "Arial;13;1",
 									"left": 520,
 									"top": 589,
-									"width": 276.3017578125,
+									"width": 305.68505859375,
 									"height": 13,
 									"text": "TypeOfTooling"
 								},
@@ -757,7 +757,7 @@
 											"font": "Arial;13;0",
 											"left": 525,
 											"top": 612,
-											"width": 266.3017578125,
+											"width": 295.68505859375,
 											"height": 13
 										},
 										{
@@ -772,7 +772,7 @@
 											"font": "Arial;13;0",
 											"left": 525,
 											"top": 627,
-											"width": 266.3017578125,
+											"width": 295.68505859375,
 											"height": 13
 										},
 										{
@@ -787,22 +787,22 @@
 											"font": "Arial;13;0",
 											"left": 525,
 											"top": 642,
-											"width": 266.3017578125,
+											"width": 295.68505859375,
 											"height": 13
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 520,
 									"top": 607,
-									"width": 276.3017578125,
+									"width": 305.68505859375,
 									"height": 53
 								}
 							],
 							"font": "Arial;13;0",
 							"left": 520,
 							"top": 584,
-							"width": 276.3017578125,
-							"height": 106,
+							"width": 305.68505859375,
+							"height": 81,
 							"nameLabel": {
 								"$ref": "AAAAAAFpds/NiqTgwgI="
 							},
@@ -910,7 +910,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 641,
-									"top": 717,
+									"top": 705,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -944,7 +944,7 @@
 									},
 									"font": "Arial;13;0",
 									"left": 641,
-									"top": 708,
+									"top": 683,
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 30,
@@ -961,7 +961,7 @@
 								"$ref": "AAAAAAFpcO6bY9+3aoM="
 							},
 							"lineStyle": 2,
-							"points": "656:760;656:689",
+							"points": "656:760;656:664",
 							"nameLabel": {
 								"$ref": "AAAAAAFpdtXWy6VMLAI="
 							},
@@ -2215,7 +2215,8 @@
 							},
 							"name": "NameMethodOfTreatmentOfMetals",
 							"type": "VARCHAR",
-							"length": 0
+							"length": "100",
+							"unique": true
 						}
 					]
 				},
@@ -2316,7 +2317,8 @@
 							},
 							"name": "NameMetalworkingOperation",
 							"type": "VARCHAR",
-							"length": 0
+							"length": "100",
+							"unique": true
 						}
 					]
 				},
@@ -2647,7 +2649,7 @@
 							},
 							"name": "InventoryNumber",
 							"type": "VARCHAR",
-							"length": 0,
+							"length": "50",
 							"unique": true
 						},
 						{
@@ -2931,7 +2933,8 @@
 							},
 							"name": "NameMaterial",
 							"type": "VARCHAR",
-							"length": 0
+							"length": "100",
+							"unique": true
 						}
 					]
 				},
@@ -3002,7 +3005,7 @@
 							},
 							"name": "NameTypeOfTooling",
 							"type": "VARCHAR",
-							"length": 0,
+							"length": "100",
 							"unique": true
 						}
 					]
@@ -3164,7 +3167,8 @@
 							},
 							"name": "PersonnelNumber",
 							"type": "VARCHAR",
-							"length": "30"
+							"length": "30",
+							"unique": true
 						}
 					]
 				},
@@ -3357,7 +3361,8 @@
 							},
 							"name": "NameSubdivision",
 							"type": "VARCHAR",
-							"length": "100"
+							"length": "100",
+							"unique": true
 						}
 					]
 				},
@@ -3420,8 +3425,8 @@
 							"name": "Id_Tooling",
 							"type": "INTEGER",
 							"length": 0,
-							"primaryKey": true,
-							"foreignKey": true
+							"foreignKey": true,
+							"unique": true
 						},
 						{
 							"_type": "ERDColumn",
