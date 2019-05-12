@@ -1,0 +1,142 @@
+
+<html>
+<head>
+    <title>Добавление единицы производства</title>
+    <style>
+   H1 {
+    font-size: 120%;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #333366;
+   }
+  </style>
+    <style>
+   label {
+    font-size: 100%;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+	color:#696969"
+   }
+  </style>
+    <style>
+
+   H3 {
+    font-size: 100%;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    align="left";
+	color:#333366;
+   }
+  </style>
+    <style>
+
+   H6 {
+    font-size: 90%;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color:#696969"
+   }
+  </style>
+    <style type="text/css">
+   button.new {
+   align=center;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00BBD6', endColorstr='#EBFFFF');
+    padding: 20px 27px;
+    color: #333;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #666;
+	background: #FFFFE0; /* фон кнопки */
+	font-size: 12pt;
+   }
+  </style>
+</head>
+<body>
+<h1  align="center" style="color:Black"> Добавление единицы производства</h1>
+
+<form name="htmlpage" action="/orderYes">
+    <table>
+        <tr>
+            <td><label>Метод обработки металлов:</label></td>
+           <td>
+                <select id="methodOM-select" name="methodOM">
+
+                </select>
+                <div class="select-arrow"></div>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label>Опреация обработки металлов:</label></td>
+            <td>
+                <select id="operationOM-select" name="operationOM">
+
+                </select>
+                <div class="select-arrow"></div>
+            </td>
+        </tr>
+
+         <tr>
+            <td><label>Единица производства:</label></td>
+            <td>
+               
+			<div class="radio">
+				<label>
+					<input type="radio" name="productionUnit" value="Технологическая оснастка">Технологическая оснастка
+					<div class="radio-control tooling"></div>
+				</label>
+				<label>
+					<input type="radio" name="productionUnit" value="Дополнительный материал">Дополнительный материал
+					<div class="radio-control additionalMaterial"></div>
+				</label>
+			</div>
+            </td>
+        </tr>
+		<tr>
+            <td><label>Тип ТО:</label></td>
+            <td>
+                <select id="typeTooling-select" name="typeTooling">
+
+                </select>
+                <div class="select-arrow"></div>
+            </td>
+        </tr>
+		<tr>
+            <td><label>Вид ТО:</label></td>
+            <td>
+                <select id="viewTooling-select" name="viewTooling">
+
+                </select>
+                <div class="select-arrow"></div>
+            </td>
+        </tr>
+		
+        <tr>
+            <td></td>
+            <td><input type='submit' value="Сохранить"></td>
+        </tr>
+
+    </table>
+
+</form>
+
+<script>
+    var $directionSelect = $('#direction-select');
+    $.ajax({
+        url: window.location.origin + '/api/directions',
+        method: 'GET'
+    })
+        .then(function(data) {
+            if (Array.isArray(data)) {
+                data
+                    .forEach(function(direction) {
+                        var option = new Option(direction.directionName, direction.directionId);
+                        $directionSelect.append(option);
+                    });
+            } else {
+                console.log('Ошибка при получении списка направлений: (не список)')
+            }
+        })
+        .fail(function(error) {
+            console.log('Ошибка при получении списка направлений');
+        });
+</script>
+</body>
+</html>

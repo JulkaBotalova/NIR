@@ -1,0 +1,133 @@
+<html>
+<head>
+    <title>Добавление единицы производства</title>
+    <style>
+   H1 {
+    font-size: 120%;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #333366;
+   }
+  </style>
+    <style>
+   label {
+    font-size: 100%;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+	color:#696969"
+   }
+  </style>
+    <style>
+
+   H3 {
+    font-size: 100%;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    align="left";
+	color:#333366;
+   }
+  </style>
+    <style>
+
+   H6 {
+    font-size: 90%;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color:#696969"
+   }
+  </style>
+    <style type="text/css">
+   button.new {
+   align=center;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00BBD6', endColorstr='#EBFFFF');
+    padding: 20px 27px;
+    color: #333;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #666;
+	background: #FFFFE0; /* фон кнопки */
+	font-size: 12pt;
+   }
+  </style>
+</head>
+<body>
+<h1  align="center" style="color:Black"> Добавление технологической оснастки</h1>
+
+<form name="htmlpage" action="/orderYes">
+    <table>
+        <tr>
+            <td><label>Название ТО:</label>
+            <input type='text' name='name' value=''></td>
+        </tr>
+        <tr>
+            <td><label>Инвентарный номер:</label>
+            <input type='text' name='name' value=''></td>
+        </tr>
+		
+			<td><label>Выберите параметр:</label>
+            
+                <select id="option-select" name="option">
+					<option value="Длиина">Длина</option>
+					<option value="Ширина">Ширина</option>
+					<option value="Высота">Высота</option>
+					<option value="Добавить">Добавить...</option> 
+                </select>
+                <div class="select-arrow"></div>
+            </td>
+			
+			<td><label>Значение:</label>
+				<input type='text' name='name' value=''>
+			</td>
+			<td><label>Единица измерения:</label>
+                <select id="unit-select" name="unit">
+					<option value="Милиметр">Мм</option>
+					<option value="Сантиметр">См</option>
+					<option value="Метр">М</option>
+					<option value="Добавить">Добавить...</option> 
+                </select>
+                <div class="select-arrow"></div>
+            </td>
+			<td><input type='submit' value="+"></td>
+        </tr>
+		        
+		<tr>
+			<td><label>Выберите ограничения для хранения:</label>
+		</tr>
+		<tr> <td>
+			<label><input type="checkbox" name="option1" value="a1" checked>Воздействие к химическим реагентам<Br>
+				<input type="checkbox" name="option2" value="a2">Windows 2000<Br>
+				<input type="checkbox" name="option3" value="a3">System X<Br> 
+				<input type="checkbox" name="option4" value="a4">Linux<Br> 
+				<input type="checkbox" name="option5" value="a5">X3-DOS</p>
+			<label><input type="submit" value="Отправить"></label>
+			</td>
+		</tr>
+        <tr>
+            <td></td>
+            <td><input type='submit' value="Далее"></td>
+        </tr>
+
+    </table>
+
+</form>
+
+<script>
+    var $directionSelect = $('#direction-select');
+    $.ajax({
+        url: window.location.origin + '/api/directions',
+        method: 'GET'
+    })
+        .then(function(data) {
+            if (Array.isArray(data)) {
+                data
+                    .forEach(function(direction) {
+                        var option = new Option(direction.directionName, direction.directionId);
+                        $directionSelect.append(option);
+                    });
+            } else {
+                console.log('Ошибка при получении списка направлений: (не список)')
+            }
+        })
+        .fail(function(error) {
+            console.log('Ошибка при получении списка направлений');
+        });
+</script>
+</body>
+</html>
